@@ -5,7 +5,7 @@ import time
 GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(18, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
-GPIO.setup(16, GPIO.IN, pull_up_down = GPIO.PUD.DOWN)
+GPIO.setup(16, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 
 def measure_time():
     i = 0
