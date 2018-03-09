@@ -14,6 +14,15 @@ def measure_time():
     a = True
     while a == True:
         if GPIO.input(18) == GPIO.HIGH:
+            start_time = time.clock()
+        if GPIO.input(16) == GPIO.HIGH:
+            end_time = time.clock
+            a = False
+    delay = end_time - start_time
+    print "delay [s] ", delay
+    
+        """
+        if GPIO.input(18) == GPIO.HIGH:
             channel18 = 1
             i = i+1
         if GPIO.input(18) == GPIO.LOW:
@@ -34,6 +43,6 @@ def measure_time():
             delay = end_time - start_time
             print "delay [s]", delay
             a = False
-
+        """
 while True:
     measure_time()
