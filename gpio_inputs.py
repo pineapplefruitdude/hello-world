@@ -7,7 +7,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(18, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 GPIO.setup(16, GPIO.IN, pull_up_down = GPIO.PUD.DOWN)
 
-def measure_time:
+def measure_time():
     i = 0
     j = 0
     start_time = 0
