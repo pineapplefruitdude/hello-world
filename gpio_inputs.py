@@ -12,7 +12,7 @@ def measure_time():
     j = 0
     start_time = 0
     a = True
-    while a = True:
+    while a == True:
         if GPIO.input(18) == GPIO.HIGH:
             channel18 = 1
             i = i+1
