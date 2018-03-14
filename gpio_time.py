@@ -13,6 +13,8 @@ def measure_time():
 
     while loop == True:
         if GPIO.input(16) == GPIO.HIGH and triggered_ch16 == False:
+            time_ch16 = time.clock()
+            triggered_ch16 = True
         if GPIO.input(18) == GPIO.HIGH and triggered_ch18 == False:
             time_ch18 = time.clock()
             triggered_ch18 = True
