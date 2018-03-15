@@ -1,3 +1,4 @@
+#Mit Python 2 ausfuehren
 import RPi.GPIO as GPIO
 import numpy as np
 import time
